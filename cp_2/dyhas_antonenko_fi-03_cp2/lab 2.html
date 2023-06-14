@@ -14942,7 +14942,7 @@ False
     <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">alphabet_length</span><span class="p">):</span>
         <span class="n">N_t</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">alphabet</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-        <span class="nb">sum</span> <span class="o">=</span> <span class="n">N_t</span> <span class="o">*</span> <span class="p">(</span><span class="n">N_t</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="nb">sum</span> <span class="o">+=</span> <span class="n">N_t</span> <span class="o">*</span> <span class="p">(</span><span class="n">N_t</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
     <span class="k">return</span> <span class="nb">sum</span> <span class="o">/</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
@@ -14997,14 +14997,14 @@ False
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>I_encrypted:  0.0008613379336495456
-I_open:  0.0003377292935330818
-I_2:  0.001593006313744536
-I_3:  0.0014788044194245468
-I_4:  0.0013929170443574472
-I_5:  0.0018065187626292915
-I_6:  0.0017927809773621486
-I_18:  0.002151955897514549
+<pre>I_encrypted:  0.032816148507887985
+I_open:  0.05939667789416007
+I_2:  0.04627357986627944
+I_3:  0.03927470261561926
+I_4:  0.038989931959948064
+I_5:  0.034993337567402645
+I_6:  0.03602645048006874
+I_18:  0.034652147610405325
 </pre>
 </div>
 </div>
@@ -15249,7 +15249,8 @@ D_ 30 = 212
 <span class="sd">        some_keys.append(temp_key)</span>
 <span class="sd">    return some_keys</span>
 
-<span class="sd">print(crack_key_2(text_to_be_decrypted, 24))&#39;&#39;&#39;</span>
+<span class="sd">print(crack_key_2(text_to_be_decrypted, 24))</span>
+<span class="sd">&#39;&#39;&#39;</span>
 </pre></div>
 
      </div>
